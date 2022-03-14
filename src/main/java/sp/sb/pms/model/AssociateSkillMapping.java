@@ -12,9 +12,12 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "USER")
-public class User {
+@Entity
+public class AssociateSkillMapping {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    int mappingId;
     int userId;
+    int skillId;
+    int skillLevel;         // From ENUM SkillLevel
 }

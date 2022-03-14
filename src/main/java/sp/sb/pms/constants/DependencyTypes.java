@@ -5,9 +5,9 @@ public enum DependencyTypes {
     SKILL(1),
     TASK(2);
 
-    private final int typeId;
+    public final int type;
 
     DependencyTypes(int typeId){
-        this.typeId = typeId;
+        this.type = typeId;
     }
 }

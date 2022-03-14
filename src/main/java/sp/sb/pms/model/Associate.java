@@ -5,19 +5,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Task {
+public class Associate {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int taskId;
-    String name;
-    float estimatedHours;
-    float actualHours;
-    @Transient
-    List<Dependency> dependencyList;
+    int userId;
 }

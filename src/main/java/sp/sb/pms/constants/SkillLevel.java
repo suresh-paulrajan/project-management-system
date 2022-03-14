@@ -7,7 +7,7 @@ public enum SkillLevel {
     LEADER(3),
     SME(4);
 
-    private int level;
+    public int level;
 
     SkillLevel(int level){
         this.level = level;
